@@ -20,7 +20,7 @@ public class Main {
     static BufferedReader dato = new BufferedReader(new InputStreamReader(System.in));
     /**
      * 
-     * @param args argumentos
+     * @param args linea de argumentos
      */
     public static void main(String[] args) {
         CCuenta cuenta1;

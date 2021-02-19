@@ -37,7 +37,7 @@ public class CCuenta {
         saldo=sal;
         tipoInterés=tipo;
     }
-    /**
+    /** Metodo de asignar el nombre del titular de la cuenta
      * 
      * @param nom nombre del titular de la cuenta
      */
@@ -45,25 +45,25 @@ public class CCuenta {
     {
         nombre=nom;
     }
-    /**
+    /**Metodo que nos devuelve el nombre del titular
      * 
-     * @return devuelve el nombre del titular de la cuenta
+     * @return <code>nombre</code> devuelve el nombre del titular de la cuenta
      */
     public String obtenerNombre()
     {
         return nombre;
     }
 
-     /**
+     /**Metdo que nos devuelve el salod disponible en la cuenta
       * 
-      * @return retorna el saldo de la cuenta
+      * @return <code>saldo</code> retorna el saldo de la cuenta
       */
      public double estado ()
     {
         return saldo;
     }
 
-    /**
+    /**Metodo para ingresar dinero en la cuenta
      * 
      * @param cantidad la cantidad ingresada a la cuenta
      * @throws Exception excepcion por la cual no se puede hacer un ingreso
@@ -75,7 +75,7 @@ public class CCuenta {
         setSaldo(saldo + cantidad);
     }
 
-    /**
+    /**Metodo para retirar dinero de la cuenta
      * 
      * @param cantidad la cantidad ingresada a la cuenta
      * @throws Exception excepcion por la cual no se puede hacer un ingreso
@@ -91,14 +91,14 @@ public class CCuenta {
     
     /**
     * Devuelve una cuenta obtenida
-    *@return cuenta retorna el numero de la cuenta
+    *@return <code>cuenta</code> retorna el numero de la cuenta
     */
     public String obtenerCuenta ()
     {
         return cuenta;
     }
 
-  /**
+  /**Asignar el numero de la cuenta
    * 
    * @param cuenta numero de la cuenta
    */
@@ -115,15 +115,15 @@ public class CCuenta {
   }
   /*
   * Devuelve el tipo de interes
-  *@return tipoInteres
+  *@return<code>tipoInterés</code> Porcentaje a aplicar
   */
   public double getTipoInterés() {
     return tipoInterés;
   }
 
-  /**
+  /**Asignar el valor del tipo de interes
    * 
-   * @param tipoInterés tipo de interes de la cuenta
+   * @param tipoInterés porcentaje a aplicar
    */
   public void setTipoInterés(double tipoInterés) {
     this.tipoInterés = tipoInterés;
